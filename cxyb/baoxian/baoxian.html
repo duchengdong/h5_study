@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		 		<!-- 脚本 -->
+	    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
 		<!-- 引入样式 -->
 	    <link rel="stylesheet" href="../css/style.css">  
 	</head>
@@ -11,9 +14,28 @@
 			<span>保险</span>
 			
 		</div>
-		<p style="padding: 0.3rem 0.26rem;">
-				<span style="color: #ff0000;">仅限投保一次</span>
-		</p>
-		
+		<div style="padding: 0.3rem 0.26rem;">
+				<span style="color: #ff0000;" ">仅限投保一次</span>
+		</div>
+		<div class="item-inner">
+				<div>
+					<label><input type="radio" name="type" class="radio" checked>&nbsp;本人投保</label><br/>
+					<label><input type="radio" name="type" class="radio">&nbsp;他人投保</label>
+				</div>
+		</div>
+		<button style="width: 50%;">first</button><br/>
+		<button >second</button>
+		<script>
+			
+			$(function(){ 
+               $(".radio").change(function() { 
+              
+              }); 
+            });
+            
+           
+        }
+         
+		</script>
 	</body>
 </html>
